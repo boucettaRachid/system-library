@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8C1B69C-A125-4448-856D-5E2BEAE18A6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibrarySystem</RootNamespace>
+    <AssemblyName>LibrarySystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access.cs" />
+    <Compile Include="Accueil\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accueil\welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil\welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Additions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\Additions.Designer.cs">
+      <DependentUpon>Additions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\All_Orders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\All_Orders.Designer.cs">
+      <DependentUpon>All_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\All_Products.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\All_Products.Designer.cs">
+      <DependentUpon>All_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FIN_Produects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\FIN_Produects.Designer.cs">
+      <DependentUpon>FIN_Produects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FRM_Add_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FRM_Add_ADMIN.Designer.cs">
+      <DependentUpon>FRM_Add_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FRM_ADD_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FRM_ADD_PRO.Designer.cs">
+      <DependentUpon>FRM_ADD_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FRM_Add_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FRM_Add_Type.Designer.cs">
+      <DependentUpon>FRM_Add_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FRM_GENE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FRM_GENE.Designer.cs">
+      <DependentUpon>FRM_GENE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FRM_Show_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FRM_Show_Orders.Designer.cs">
+      <DependentUpon>FRM_Show_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FRM_Show_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FRM_Show_Product.Designer.cs">
+      <DependentUpon>FRM_Show_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FRM_UpdateProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FRM_UpdateProducts.Designer.cs">
+      <DependentUpon>FRM_UpdateProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\help.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\help.designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Management.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\Management.Designer.cs">
+      <DependentUpon>Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\properties_DataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\properties_DataBase.Designer.cs">
+      <DependentUpon>properties_DataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Settinges.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\Settinges.Designer.cs">
+      <DependentUpon>Settinges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\STOCK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllForms\STOCK.Designer.cs">
+      <DependentUpon>STOCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinterHelper.cs" />
+    <Compile Include="email.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RDLC\report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RDLC\report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheQuery.cs" />
+    <EmbeddedResource Include="Accueil\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accueil\welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Additions.resx">
+      <DependentUpon>Additions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\All_Orders.resx">
+      <DependentUpon>All_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\All_Products.resx">
+      <DependentUpon>All_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FIN_Produects.resx">
+      <DependentUpon>FIN_Produects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FRM_Add_ADMIN.resx">
+      <DependentUpon>FRM_Add_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FRM_ADD_PRO.resx">
+      <DependentUpon>FRM_ADD_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FRM_Add_Type.resx">
+      <DependentUpon>FRM_Add_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FRM_GENE.resx">
+      <DependentUpon>FRM_GENE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FRM_Show_Orders.resx">
+      <DependentUpon>FRM_Show_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FRM_Show_Product.resx">
+      <DependentUpon>FRM_Show_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FRM_UpdateProducts.resx">
+      <DependentUpon>FRM_UpdateProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Management.resx">
+      <DependentUpon>Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\properties_DataBase.resx">
+      <DependentUpon>properties_DataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Settinges.resx">
+      <DependentUpon>Settinges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\STOCK.resx">
+      <DependentUpon>STOCK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RDLC\report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDLC\Report1.rdlc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
